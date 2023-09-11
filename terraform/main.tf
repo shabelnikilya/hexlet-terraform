@@ -13,16 +13,16 @@ provider "digitalocean" {
   token = var.do_token
 }
 
-resource "digitalocean_droplet" "web1" {
-  image  = "ubuntu-18-04-x64"
+resource "digitalocean_droplet" "web" {
+  image  = "ubuntu-20-04-x64"
   name   = "web-1"
-  region = "ams3"
+  region = "nyc3"
   size   = "s-1vcpu-1gb"
 }
 
 resource "digitalocean_droplet" "web2" {
-  image  = "ubuntu-18-04-x64"
+  image  = "ubuntu-20-04-x64"
   name   = "web-2"
-  region = "ams3"
+  region = "nyc3"
   size   = "s-1vcpu-1gb"
 }
